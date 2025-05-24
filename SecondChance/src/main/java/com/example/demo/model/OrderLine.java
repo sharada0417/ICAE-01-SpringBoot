@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class OrderLine {
@@ -9,4 +11,11 @@ public class OrderLine {
 	private Long id;
 	private int quality;
 	
+	@ManyToOne
+	@JoinColumn(name="food_order_id")
+	private FoodOrder foodOrder;
+	
+	@ManyToOne
+	@JoinColumn(name="food_item_id")
+	private FoodItem foodItem;
 }
