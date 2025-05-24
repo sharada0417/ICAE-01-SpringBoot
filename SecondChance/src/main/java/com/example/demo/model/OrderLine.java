@@ -7,15 +7,17 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class OrderLine {
-	@Id
-	private Long id;
-	private int quality;
-	
-	@ManyToOne
-	@JoinColumn(name="food_order_id")
-	private FoodOrder foodOrder;
-	
-	@ManyToOne
-	@JoinColumn(name="food_item_id")
-	private FoodItem foodItem;
+    @Id
+    private Long id;
+    private int quantity;
+
+    @ManyToOne
+    @JoinColumn(name = "food_order_id")
+    private FoodOrder foodOrder;
+
+    @ManyToOne
+    @JoinColumn(name = "food_item_id")
+    private FoodItem foodItem;
+
+    // Getters and Setters
 }

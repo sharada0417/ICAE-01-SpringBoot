@@ -14,5 +14,4 @@ public class SecondChanceApplication {
 		SpringApplication.run(SecondChanceApplication.class, args);
 		
 	}
-
 }
