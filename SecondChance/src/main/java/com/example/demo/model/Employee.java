@@ -1,5 +1,5 @@
 package com.example.demo.model;
 
-public interface Employee {
-
+public class Employee extends Person {
+	private String jobPosition;
 }
