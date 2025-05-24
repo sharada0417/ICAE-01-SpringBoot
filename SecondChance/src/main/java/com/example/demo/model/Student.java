@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
-public interface Student {
+public class Student extends Person {
+	private String acadamicDegree;
 
 }
